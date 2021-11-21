@@ -91,29 +91,50 @@
  }
  .description {
   border: 1px solid red;
+  position: relative;
+  margin: 100px auto;
+  width: 80%;
+  min-width:784px;
   padding-bottom: 100px;
+  
  }
- .two-colums {
+ .description__two-colums {
   border: 1px solid red;
   display: flex;
   justify-content: space-between;
-  width: 80%;
-  min-width:784px;
+  align-items: center;
  }
- .two-colums_brief{
+ .description__two-colums_brief{
   border: 1px solid red;
-  width: 175px;
   color: #2f80ed;
+  display: flex;
+  align-items: column;
   line-height: 1.2px;
+  width: 175px;
   font-size: 18px;
   font-weight: 400;
+  vertical-align: top;
   
  }
  .two-colums__main-text{
   border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: auto;
+  margin:auto;
  }
  .two-colums__paragraph{
   border: 1px solid red;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+  list-style: none;
+ }
+ .two-colums__span-accent{
+  border: 1px solid red;
+
  }
 
  .digits {
@@ -181,6 +202,36 @@
   text-align: center;
   font-weight: 400;
   justify-content: center;
+ }
+ .feynman{
+  border: 1px solid red;
+  height: 890px;
+  background-color: #f2f2f2;
+  position: relative;
+
+ }
+ .feynman__title {
+  border: 1px solid red;
+  width: 648px;
+  text-align:center;
+  padding-top: 100px;
+  font-weight: 700;
+  line-height: 1.15px;
+  font-size: 120px;
+
+
+ }
+ .feynman__subtitle {
+  border: 1px solid red;
+
+ }
+ .feynman__link {
+   border: 1px solid red;
+
+ }
+ .feynman-illustration {
+  border: 1px solid red;
+
  }
  .footer {
   min-height: 350px;
