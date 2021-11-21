@@ -61,6 +61,7 @@
   width: 765px;
   height: 608px;
   right: 0;
+  bottom: 0;
 }
 .header__subtitle {
   border: 1px solid red;
@@ -69,7 +70,14 @@
   bottom: 30px;
   width: 388px;
   text-align: left;
+  line-height: 25px;
   margin-right: 64px;
+}
+.header__link{
+  line-height: 25px;
+  color: #2f80ed;
+  text-decoration: none;
+
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -189,7 +197,7 @@
   display: flex;
   direction: column;
   }
-  .footer_columns {
+  .footer_column {
   width: 90%;
   background-color:#000000;
   background-position: cover;
@@ -197,7 +205,7 @@
   flex-direction: column;
   justify-content: flex-start;
   }
-  .footer__column-links {
+  .footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: 400px;
