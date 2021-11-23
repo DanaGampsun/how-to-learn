@@ -251,7 +251,7 @@ li {
   z-index: 0;
 }
 
-.section-title {
+.section-title_theme_dark {
   border: 1px solid red;
   width: 60%;
   margin: 0 auto 20px;
@@ -262,7 +262,7 @@ li {
   color: white;
 }
 
-.section-subtitle {
+.section-subtitle_theme_dark {
   border: 1px solid red;
   width: 60%;
   margin: 0 auto;
@@ -289,7 +289,7 @@ li {
   margin: 0;
   
 }
-.table__text {
+.table__text_theme_dark{
   line-height: 1.15;
   font-size: 24px;
   font-weight: 400;
