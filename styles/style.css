@@ -8,7 +8,9 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
-
+li {
+  list-style-type: none;
+}
 .header {
   border: 1px solid red;
   height: 100vh;
@@ -21,7 +23,8 @@
   position: relative;
   margin-bottom: 100px;
 }
-.logo {}
+.logo {
+}
 
 .logo_place_header {
   border: 1px solid red;
@@ -33,7 +36,7 @@
   z-index: 1;
 }
 
-.header__title {  
+.header__title {
   border: 1px solid red;
   display: flex;
   align-items: flex-start;
@@ -76,30 +79,19 @@
   line-height: 25px;
   margin-right: 64px;
 }
-.header__link{
+.header__link {
   line-height: 25px;
   color: #2f80ed;
   text-decoration: none;
-
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  border: 1px solid red;
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-
- }
- .description {
+.description {
   border: 1px solid red;
   position: relative;
   display: flex;
   justify-content: space-between;
   margin: 100px auto;
   width: 80%;
-  padding-bottom: 100px;
 }
 
 .description__two-columns {
@@ -127,6 +119,9 @@
   border: 1px solid red;
   line-height: 34px;
 }
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
+}
 
 .two-columns__paragraph {
   border: 1px solid red;
@@ -136,69 +131,68 @@
 }
 
 .span-accent {
-  font-weight: 700;  
+  font-weight: 700;
 }
- .digits {
-   border: 1px solid red;
-   display: flex;
+.digits {
+  border: 1px solid red;
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
- }
+}
 
- .section__title{
+.section__title {
   border: 1px solid red;
   width: 60%;
   margin: 0 auto 20px;
- font-size: 60px;
- font-weight: 700;
- line-height: 1.15;
- padding-bottom: 20px;
- text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.15;
+  padding-bottom: 20px;
+  text-align: center;
 }
-.section__subtitle{
+.section__subtitle {
   border: 1px solid red;
- width: 60%;
- margin: 0;
- font-size: 24px;
- font-weight: 700;
- line-height: 34px;
- text-align: center;
+  width: 60%;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
 }
- .table {
+.table {
   border: 1px solid red;
-   display: flex;
-   width:1100px;
-   margin: 0 auto;
-   flex-wrap: wrap ;
-   justify-content: space-between;
- }
- .table__cell {
+  display: flex;
+  width: 1100px;
+  margin: 0 auto;
+  padding-left: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.table__cell {
   border: 1px solid red;
   width: 250px;
-   list-style: none;
-   margin-top: 60px ;
- }
+  list-style: none;
+  margin-top: 60px;
+}
 
- .table__heading{
+.table__heading {
   border: 1px solid red;
   font-size: 24px;
   line-height: 1.15;
   padding-bottom: 20px;
- }
- 
- .section__text{
+  margin: 0 auto;
+}
+.section__text:last-child {
+  margin-bottom: 0;
+}
+.section__text {
   border: 1px solid red;
-  display: flex;
-  width: 60%;
-  margin: 20px auto 0;
   font-size: 18px;
   line-height: 1.15;
-  text-align: center;
   font-weight: 400;
-  justify-content: center;
- }
- .feynman{
+}
+.feynman {
   border: 1px solid red;
   height: 890px;
   display: flex;
@@ -209,66 +203,131 @@
   background-position: left bottom;
   background-color: #f2f2f2;
   position: relative;
-  margin-bottom: 90px;
- 
- }
- .feynman__title {
+}
+.feynman__title {
   border: 1px solid red;
   margin: 50px 0 70px 0;
   width: 648px;
-  text-align:center;
+  text-align: center;
   font-weight: 700;
   line-height: 1.15;
   font-size: 120px;
   z-index: 2;
- }
- .feynman__subtitle {
+}
+.feynman__subtitle {
   border: 1px solid red;
   font-weight: 400;
   line-height: 51px;
   font-size: 36px;
   z-index: 2;
-
- }
- .feynman__link {
-   text-decoration: none;
-   color: #2f80ed;
-   position: absolute;
-   top: 50%;
-   font-weight: 400;
+}
+.feynman__link {
+  color: #2f80ed;
+  position: absolute;
+  top: 50%;
+  font-weight: 400;
   line-height: 51px;
   font-size: 36px;
   right: 48px;
- }
- 
- .footer {
+}
+.kaufman {
+  border: 1px solid red;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #000000;
+  overflow: hidden;
+  padding: 90px 0;
+  display: flex;
+  flex-wrap: wrap;
+   align-items: center;
+}
+.kaufman::after { 
+  position: absolute;
+  background-position: right bottom;
+  border-right: 210px;
+  height: 877px;
+  width: 877px;
+}
+
+.section-title {
+  border: 1px solid red;
+  width: 60%;
+  margin: 0 auto 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.15;
+  color: white;
+}
+
+.section-subtitle {
+  border: 1px solid red;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+  align-items: center;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  border: 1px solid red;
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+.table__cell {
+  width: 250px;
+  margin: 60px 0 0;
+  border: 1px solid red;
+}
+
+.table__heading_theme_dark {
+  width: 200px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 400;
+  margin: 0;
+}
+.table__text {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.footer {
   min-height: 350px;
   max-height: 400px;
-  background-color:#000000;
+  background-color: #000000;
   background-position: cover;
   flex-basis: 711px;
   display: flex;
   direction: row;
   justify-content: space-between;
   align-content: flex-start;
-  }
-  footer_columns-first-column {
+}
+.footer_columns-first-column {
   display: flex;
   direction: column;
-  }
-  .footer_column {
+}
+.footer_column {
   width: 90%;
-  background-color:#000000;
+  background-color: #000000;
   background-position: cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  }
-  .footer__column-link {
+}
+.footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: 400px;
   color: white;
   display: flex;
   flex-direction: column;
-  }
+}
