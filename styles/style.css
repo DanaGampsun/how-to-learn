@@ -188,7 +188,7 @@ li {
 .table__text {
   border: 1px solid red;
   font-size: 18px;
-  line-height: 1.15;
+  line-height: 1.2;
   font-weight: 400;
 }
 .feynman {
@@ -269,6 +269,7 @@ li {
 }
 
 .footer {
+  border: 1px solid red;
   min-height: 350px;
   max-height: 400px;
   background-color: #000000;
@@ -279,11 +280,19 @@ li {
   justify-content: space-between;
   align-content: flex-start;
 }
+
+.logo_place_footer {
+  border: 1px solid red;
+  background-image: url(../images/logo_place_footer.svg);
+  background-repeat: no-repeat;
+}
 .footer_columns-first-column {
+  border: 1px solid red;
   display: flex;
   direction: column;
 }
 .footer_column {
+  border: 1px solid red;
   width: 90%;
   background-color: #000000;
   background-position: cover;
@@ -291,11 +300,16 @@ li {
   flex-direction: column;
   justify-content: flex-start;
 }
-.footer__column-link {
+.footer__author {
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.footer__column-heading {
+  border: 1px solid red;
   line-height: 30px;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 700px;
   color: white;
-  display: flex;
-  flex-direction: column;
 }
