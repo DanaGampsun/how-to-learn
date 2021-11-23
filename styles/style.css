@@ -141,7 +141,7 @@ li {
   margin-bottom: 100px;
 }
 
-.section__title {
+.section-title {
   border: 1px solid red;
   width: 60%;
   margin: 0 auto 20px;
@@ -151,14 +151,15 @@ li {
   padding-bottom: 20px;
   text-align: center;
 }
-.section__subtitle {
+.section-subtitle {
   border: 1px solid red;
   width: 60%;
-  margin: 0;
+  margin: 0 auto;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 34px;
   text-align: center;
+  align-items: center;
 }
 .table {
   border: 1px solid red;
@@ -172,7 +173,6 @@ li {
 .table__cell {
   border: 1px solid red;
   width: 250px;
-  list-style: none;
   margin-top: 60px;
 }
 
@@ -180,13 +180,12 @@ li {
   border: 1px solid red;
   font-size: 24px;
   line-height: 1.15;
-  padding-bottom: 20px;
   margin: 0 auto;
 }
-.section__text:last-child {
+.table__text:last-child {
   margin-bottom: 0;
 }
-.section__text {
+.table__text {
   border: 1px solid red;
   font-size: 18px;
   line-height: 1.15;
@@ -253,47 +252,20 @@ li {
 
 .section-title_theme_dark {
   border: 1px solid red;
-  width: 60%;
-  margin: 0 auto 20px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 1.15;
   color: white;
 }
 
 .section-subtitle_theme_dark {
   border: 1px solid red;
-  width: 60%;
-  margin: 0 auto;
-  align-items: center;
-  text-align: center;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: 400;
-  color: white; 
+  color: white;
 }
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
-    z-index: 1;
-  }
-
-.table__heading_theme_dark {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0; 
-}
-.table__text_theme_dark{
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: 400;
-  margin: 0;
-  
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+  z-index: 1;
 }
 
 .footer {
