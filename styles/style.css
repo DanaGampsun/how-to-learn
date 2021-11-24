@@ -11,6 +11,9 @@
 li {
   list-style-type: none;
 }
+a{
+  text-decoration: none;
+}
 .header {
   border: 1px solid red;
   height: 100vh;
@@ -32,7 +35,7 @@ li {
   top: 30px;
   left: 64px;
   width: 183px;
-  height: 32p;
+  height: 32px;
   z-index: 1;
 }
 
@@ -193,7 +196,7 @@ li {
 }
 .feynman {
   border: 1px solid red;
-  height: 890px;
+  min-height: 890px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -205,7 +208,7 @@ li {
 }
 .feynman__title {
   border: 1px solid red;
-  margin: 50px 0 70px 0;
+  margin: 100px 0 70px 0;
   width: 648px;
   text-align: center;
   font-weight: 700;
@@ -271,45 +274,45 @@ li {
 .footer {
   border: 1px solid red;
   min-height: 350px;
-  max-height: 400px;
   background-color: #000000;
-  background-position: cover;
+  display: flex;
+  
+}
+.footer__columns {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
-  direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-content: flex-start;
 }
-
 .logo_place_footer {
   border: 1px solid red;
   background-image: url(../images/logo_place_footer.svg);
   background-repeat: no-repeat;
-}
-.footer_columns-first-column {
-  border: 1px solid red;
-  display: flex;
-  direction: column;
-}
-.footer_column {
-  border: 1px solid red;
-  width: 90%;
-  background-color: #000000;
-  background-position: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  height: 35px;
 }
 .footer__author {
   margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
+  color: white;
 }
+
 .footer__column-heading {
   border: 1px solid red;
   line-height: 30px;
   font-size: 18px;
   font-weight: 700px;
   color: white;
+}
+.footer__column-links a{
+  color: white;
+  line-height: 30px;
+  font-size: 18px;
 }
