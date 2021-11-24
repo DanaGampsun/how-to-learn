@@ -273,18 +273,21 @@ a{
 
 .footer {
   border: 1px solid red;
-  min-height: 350px;
-  background-color: #000000;
-  display: flex;
   
+  background-color: #000000;
 }
 .footer__columns {
   border: 1px solid red;
   display: flex;
+  position:relative;
+  min-height: 350px;
+  flex-direction: row;
+  width: 90%;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 60px auto 40px;
 }
 .footer__column_content_copyright {
+  border: 1px solid red;
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
@@ -295,6 +298,7 @@ a{
   background-image: url(../images/logo_place_footer.svg);
   background-repeat: no-repeat;
   height: 35px;
+  width:183px ;
 }
 .footer__author {
   margin: 18px 0;
@@ -309,10 +313,14 @@ a{
   line-height: 30px;
   font-size: 18px;
   font-weight: 700px;
+  margin: 0;
   color: white;
+}
+.footer__column-links {
+  line-height: 30px;
+  font-size: 18px;
+  padding-left: 0;
 }
 .footer__column-links a{
   color: white;
-  line-height: 30px;
-  font-size: 18px;
 }
