@@ -82,7 +82,7 @@
   min-width: 784px;
 }
 
-.description__two-columns_brief {
+.two-columns__brief {
   color: #2f80ed;
   line-height: 1.2;
   max-width: 175px;
@@ -92,7 +92,7 @@
   margin: 0;
 }
 
-.description__two-columns_main-text {
+.two-columns__main-text {
   display: flex;
   width: 80%;
   flex-direction: column;
@@ -108,7 +108,7 @@
   margin-bottom: 30px;
 }
 
-.span-accent {
+.two-columns__span-accent {
   font-weight: 700;
 }
 .digits {
@@ -276,12 +276,16 @@
   color: white;
 }
 .footer__column-links {
-  line-height: 30px;
-  font-size: 18px;
+  margin: 20px 0 16px; 
   padding-left: 0;
   list-style-type: none;
 }
-.footer__column-links a {
+.footer__column-link {
   color: white;
   text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+}
+.footer__social-icon {
+  padding-right: 10px;
 }
