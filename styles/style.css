@@ -8,13 +8,7 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
-li {
-  list-style-type: none;
-}
 
-a {
-  text-decoration: none;
-}
 .header {
   height: 100vh;
   min-height: 600px;
@@ -37,7 +31,7 @@ a {
 
 .header__title {
   display: flex;
-  width: 730px;
+  max-width: 730px;
   line-height: 96px;
   font-weight: 700;
   font-size: 102px;
@@ -67,12 +61,14 @@ a {
   left: 64px;
   bottom: 30px;
   margin: 0;
-  width: 388px;
+  max-width: 388px;
   text-align: left;
   line-height: 25px;
+  font-size: 18px;
   z-index: 2;
 }
 .header__link {
+  text-decoration: none;
   line-height: 25px;
   color: #2f80ed;
 }
@@ -86,16 +82,10 @@ a {
   min-width: 784px;
 }
 
-.description__two-columns {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .description__two-columns_brief {
   color: #2f80ed;
   line-height: 1.2;
-  width: 175px;
+  max-width: 175px;
   font-size: 18px;
   font-weight: 400;
   text-align: left;
@@ -152,6 +142,7 @@ a {
   padding-left: 0;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style-type: none;
 }
 .table__cell {
   width: 250px;
@@ -167,6 +158,7 @@ a {
   margin-bottom: 0;
 }
 .table__text {
+  margin: 20px 0;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 400;
@@ -184,7 +176,7 @@ a {
 }
 .feynman__title {
   margin: 100px 0 70px 0;
-  width: 648px;
+  max-width: 648px;
   text-align: center;
   font-weight: 700;
   line-height: 1.15;
@@ -206,10 +198,11 @@ a {
   line-height: 51px;
   font-size: 36px;
   right: 48px;
+  text-decoration: none;
 }
 .kaufman {
   position: relative;
-  background-color: #000000;
+  background-color: #1f1f1f;
   overflow: hidden;
   padding: 90px 0;
   display: flex;
@@ -246,12 +239,12 @@ a {
 
 .footer {
   padding: 60px 0 40px;
-  background-color: #000000;
+  background-color: #1f1f1f;
 }
 .footer__columns {
   display: flex;
   margin: 0 auto;
-  min-height: 350px;
+  min-height: 250px;
   width: 90%;
   justify-content: space-between;
 }
@@ -286,7 +279,9 @@ a {
   line-height: 30px;
   font-size: 18px;
   padding-left: 0;
+  list-style-type: none;
 }
 .footer__column-links a {
   color: white;
+  text-decoration: none;
 }
