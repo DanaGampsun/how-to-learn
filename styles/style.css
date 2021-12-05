@@ -127,6 +127,32 @@
 .two-columns__span-accent {
   font-weight: 700;
 }
+
+.techniques{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.cards{
+  display: flex;
+  margin: 0 auto;
+  padding-left: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.cards-item {
+  width: 920px;
+}
+.cards__image{
+  width: 160px;
+  height: 160px;
+  padding: 60px 40px 43px;
+}
+
 .video__iframes {
   margin: 50px auto 160px;
   display:flex;
@@ -136,6 +162,17 @@
 .video__iframe {
   padding-right: 20px;
 }
+.oakley {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 160px auto 100px;
+  width: 80%;
+  min-width: 784px;
+  background-color: #f2f2f2;
+
+}
+
 .digits {
   display: flex;
   flex-direction: column;
