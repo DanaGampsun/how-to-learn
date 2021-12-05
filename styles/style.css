@@ -257,17 +257,18 @@
   cursor: pointer;
 transition: opacity 0.3s linear;
  }
+ .khan__buy-link:hover {
+   opacity:0,6;
+ }
  .khan__book-container {
    display: flex;
  }
  .khan__book-pic {
-   width: 608px;
-   height: 620px;
-
+   min-width: 608px;
+   min-height: 620px;
  }
- .link-visibility:hover {
-opacity: 0.5;
- }
+ 
+ 
 .digits {
   display: flex;
   flex-direction: column;
@@ -378,7 +379,6 @@ opacity: 0.5;
   top: 0;
   right: -210px;
   z-index: 0;
-
 }
 
 .section-title_theme_dark {
@@ -400,6 +400,21 @@ opacity: 0.5;
   margin: 100px auto 217px;
 }
 
+.resources__logo-zone {
+  margin: 80px auto ;
+  display: flex;
+  justify-content: center;
+  width: 1100px;
+}
+.resources__logo {
+  width: 270px;
+  height: 38px;
+  cursor: pointer;
+  transition: opacity 0.3s linear;
+}
+.resources__logo:hover {
+   opacity: 0,6;
+}
 .footer {
   padding: 60px 0 40px;
   background-color: #1f1f1f;
