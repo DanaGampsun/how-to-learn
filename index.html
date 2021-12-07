@@ -7,8 +7,7 @@
   <meta name="description" content="How to learn">
   <meta name="keywords" content="html,css">
   <meta name="author" content="Лидия Трощинская">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="/pages/index.css">
+  <link rel="stylesheet" href="pages/index.css">
   <title>Научиться учиться</title>
 </head>
 
@@ -44,7 +43,7 @@
     </section>
 
     <section class="techniques">
-      <h2 class="section-title">Техники обучения</h2>
+      <h2 class="section-title" id="techniques">Техники обучения</h2>
       <p class="section-subtitle">Пять практик от Барбары Оакли</p>
       <ul class="cards">
         <li class="cards__item">
@@ -74,8 +73,9 @@
           <h3 class="cards__title">Иллюзия компетентности</h3>
           <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы
             владеете новой темой.</p>
+          </li>
         <li class="cards__item"></li>
-        </li>
+        
       </ul>
     </section>
 
@@ -84,12 +84,11 @@
       <h2 class="section-title">Видео на TED</h2>
       <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
       <div class="video__iframes">
-        <div class="video__iframe">
-          <iframe id="ytplayer" type="text/html" width="515" height="316"
-            src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <iframe id="ytplayer" type="text/html" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY"
-          frameborder="0" allowfullscreen></iframe>
+        <iframe class="video__iframe"
+            src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen></iframe>
+        <iframe class="video__iframe" 
+         src="https://www.youtube.com/embed/5MgBikgcWnY"
+           allowfullscreen></iframe>
       </div>
     </section>
 
@@ -102,6 +101,7 @@
           успешно, что её выдвинули в командиры. Но для продвижения по службе нужно было сдавать математику. И тогда
           Барбара придумала свой подход к точным наукам. Оказалось, если вам что-то «плохо даётся», ваши добытые трудом
           знания гораздо глубже, чем у тех, кому всё ясно с первого взгляда.</p>
+        </div>
         </div>
         </section>
 
@@ -162,7 +162,7 @@
           <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
-            <img class="khan__book-pic" src="images/khan-book.jpg" alt="Книга Салман Хан"></img>
+            <img class="khan__book-pic" src="images/khan-book.jpg" alt="Книга Салман Хан">
             <a class="khan__buy-link" href="#">Купить книгу&#8594;</a>
           </div>
         </div>
@@ -221,14 +221,14 @@
 
 
     <section class="resources">
-      <div class="section-title">Полезные ресурсы</div>
-      <div class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</div>
-      <div class="resources__logo-zone">
-        <img class="resources__logo" src="images/resources-arzamas.svg" alt="Арзамас">
-        <img class="resources__logo" src="images/resources-n1.svg" alt="Н+1">
-        <img class="resources__logo" src="images/resources-strelka.svg" alt="Стрелка">
-        <img class="resources__logo" src="images/resources-polka.svg" alt="Полка">
-      </div>
+      <h2 class="section-title">Полезные ресурсы</h2>
+      <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+      <ul class="resources__logo-zone">
+        <li><img class="resources__logo" src="images/resources-arzamas.svg" alt="Арзамас"></li>
+        <li><img class="resources__logo" src="images/resources-n1.svg" alt="Н+1"></li>
+        <li><img class="resources__logo" src="images/resources-strelka.svg" alt="Стрелка"></li>
+        <li><img class="resources__logo" src="images/resources-polka.svg" alt="Полка"></li>
+      </ul>
     </section>
   </main>
 
