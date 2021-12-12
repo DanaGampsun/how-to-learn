@@ -5,6 +5,7 @@
   width: 515px;
   height: 316px;
 }
+
 .video__iframe:nth-child(2n) {
   margin-right: 0;
 }
