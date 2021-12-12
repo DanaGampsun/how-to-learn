@@ -2,7 +2,7 @@
   position: relative;
   background-color: #1f1f1f;
   overflow: hidden;
-  padding: 90px 0;
+  padding-top: 90px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

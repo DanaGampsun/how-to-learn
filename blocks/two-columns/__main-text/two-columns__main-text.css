@@ -3,4 +3,5 @@
   width: 80%;
   flex-direction: column;
   line-height: 34px;
+  min-width: 784px;
 }
